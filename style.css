@@ -1,0 +1,188 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/********fonts******/
+@font-face {
+  font-family: "cormorant_uprightbold";
+  src: url("fonts/cormorantupright-bold-webfont.woff2") format("woff2"),
+    url("fonts/cormorantupright-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "loraitalic";
+  src: url("fonts/lora-italic-variablefont_wght-webfont.woff2") format("woff2"),
+    url("fonts/lora-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******** color **********/
+.color {
+  color: #6975a6;
+  color: #907b8f;
+  color: #c6b0c5;
+  color: #dfe1f3;
+}
+
+/********** style af billeder *********/
+img {
+  border: 10px double #c6b0c5;
+  border-radius: 25px;
+}
+.billede {
+  padding: 10px;
+}
+
+/********* style af text *********/
+h1 {
+  font-family: cormorant_uprightbold;
+  font-size: 4rem;
+  color: #6975a6;
+  margin-block: 0.5rem;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
+h2 {
+  font-family: loraitalic;
+  font-size: 1.5rem;
+  margin-block: 0.9rem;
+  color: #6975a6;
+}
+h3 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "PT serif", serif;
+  font-size: 1rem;
+  margin-block: 1rem;
+}
+
+dl {
+  border: 5px solid #6975a6;
+  border-radius: 10px;
+}
+
+dd {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  background-color: #dfe1f3;
+}
+
+dt {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #907b8f;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.iben {
+  border-style: double;
+  border: 0.5px solid transparent;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 7px;
+  background-color: #907b8f;
+  color: white;
+  font-weight: bold;
+}
+
+.liste {
+  margin-left: 20px;
+}
+
+/*********** andet *************/
+main {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: #907b8f;
+  padding: 20px;
+  color: white;
+}
+
+body {
+  background-color: #f8eff8;
+}
+
+footer {
+  background-color: #907b8f;
+  padding: 20px;
+  color: white;
+}
+
+/************* menu ************/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #dfe1f3;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #907b8f;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
